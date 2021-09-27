@@ -88,15 +88,15 @@
     ```
         docker exec -it <CONTAINER ID> bash 
     ```
-    4.1. Примените миграции, введите:  
+    - Примените миграции, введите:  
         ```
             python code/ manage.py migrate --noinput
         ```
-    4.2. Создайте суперпользователя, необходимо ввести:  
+    - Создайте суперпользователя, необходимо ввести:  
         ```
             python code/manage.py createsuperuser
         ```
-    4.3. Собирите статику:  
+    - Собирите статику:  
         ```
             python code/manage.py collectstatic --noinput
         ```
