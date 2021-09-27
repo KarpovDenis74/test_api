@@ -1,4 +1,4 @@
-# [***«Тестовый проек test_API»»***](http://github.com/KarpovDenis74/test_api.git)
+# [***«Тестовый проект test_API»»***](http://github.com/KarpovDenis74/test_api.git)
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
@@ -24,6 +24,7 @@
 ----
 
 ## Запуск проекта
+##
 
 ### Вариант 1 - Запуск на локальной машине
 1. Клонируйте данный репозиторий к себе в папку:
@@ -104,7 +105,7 @@
     ```
         localhost:8000
     ```
-6.Документация по API будет доступна по адресу:  
+6. Документация по API будет доступна по адресу:  
     ```
         127.0.0.1:8000/redoc/
     ```
