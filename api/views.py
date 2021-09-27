@@ -25,8 +25,8 @@ class ViewSurvey(viewsets.ModelViewSet):
 
     def get_queryset(self):
         now_date = datetime.date.today()
-        queryset = Survey.objects.filter(data_start__lte=now_date,
-                                   data_end__gte=now_date)
+        queryset = Survey.objects.filter(date_start__lte=now_date,
+                                   date_end__gte=now_date)
         return queryset
 
 

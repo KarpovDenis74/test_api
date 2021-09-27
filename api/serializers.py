@@ -20,27 +20,18 @@ class SurveySerializer(serializers.ModelSerializer):
 
 
 class QuestionSerializer(serializers.ModelSerializer):
-    type = serializers.ReadOnlyField(source='type.name')
-    survey = SurveySerializer()
-
     class Meta:
         fields = ('pk', 'text', 'type', 'survey', )
         model = Question
 
 
 class AnswerSerializer(serializers.ModelSerializer):
-    question = QuestionSerializer()
-
     class Meta:
         fields = ('pk', 'question', 'text', )
         model = Answer
 
 
 class ResultSerializer(serializers.ModelSerializer):
-    answer = serializers.ReadOnlyField(source='answer.text')
-    question = QuestionSerializer()
-    survey = SurveySerializer()
-
     class Meta:
         fields = ('pk', 'interviewee',
             'answer',
