@@ -74,7 +74,7 @@
         ```
 3. Запустите контейнер (doker скачает образ test_api с ресурса DockerHub и запустит контейнер):  
     ```
-        docker run -it -p 8000:8000 test_api
+        docker run -it -p 8000:8000 fotokarpov/test_api:v1.0
     ```
 4. Зайдите в контейнер:
      ```
