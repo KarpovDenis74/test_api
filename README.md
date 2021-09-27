@@ -44,9 +44,9 @@
         pip install -r requirements.txt
     ```
 5. Создайте файл .env и заполните его своими значениями. Все нужные переменные описаны в файле 
-        ```
-            .env.template
-        ```
+    ```
+        .env.template
+    ```
 6. Примените миграции, введите:  
     ```
         python manage.py migrate --noinput
@@ -85,18 +85,18 @@
         docker run --env-file .env -it -p 8000:8000 fotokarpov/test_api:v1.0
     ```
 4. Зайдите в контейнер:
-     ```
+    ```
         docker exec -it <CONTAINER ID> bash 
     ```
-    4.1 Примените миграции, введите:  
+    4.1. Примените миграции, введите:  
         ```
             python code/ manage.py migrate --noinput
         ```
-    4.2 Создайте суперпользователя, необходимо ввести:  
+    4.2. Создайте суперпользователя, необходимо ввести:  
         ```
             python code/manage.py createsuperuser
         ```
-    4.3 Собирите статику:  
+    4.3. Собирите статику:  
         ```
             python code/manage.py collectstatic --noinput
         ```
