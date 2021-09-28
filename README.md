@@ -1,4 +1,4 @@
-# [***«Тестовый проект test_API»»***](http://github.com/KarpovDenis74/test_api.git)
+# [***«Тестовый проект test_API»***](http://github.com/KarpovDenis74/test_api.git)
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
