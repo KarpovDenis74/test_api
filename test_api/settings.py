@@ -35,6 +35,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'rest_framework.authtoken',
     'django_filters',
     'corsheaders',
     'drf_yasg',
@@ -75,7 +76,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'test_api.wsgi.application'
 
-
+DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
@@ -105,9 +106,13 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework.authentication.TokenAuthentication',
+    ],
     'DEFAULT_PERMISSION_CLASSES': [
         'rest_framework.permissions.AllowAny',
     ],
+
 }
 # Internationalization
 # https://docs.djangoproject.com/en/2.2/topics/i18n/

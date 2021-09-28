@@ -37,9 +37,9 @@ urlpatterns = [
     path('api/', include('api.urls', namespace='api')),
 ]
 urlpatterns += [
-    path(r'^swagger(?P<format>\.json|\.yaml)$',
+    path('swagger/<str:format>',
         schema_view.without_ui(cache_timeout=0), name='schema-json'),
-    path(r'^swagger/$', schema_view.with_ui('swagger',
+    path('swagger/', schema_view.with_ui('swagger',
                                            cache_timeout=0), name='schema-swagger-ui'),
     path('redoc/', schema_view.with_ui('redoc',
                                          cache_timeout=0), name='schema-redoc'),
